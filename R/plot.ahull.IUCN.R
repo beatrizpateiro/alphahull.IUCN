@@ -1,11 +1,8 @@
 #' Very simple plot function
-#' @param x The x and y arguments provide the x and y coordinates of a set of points. Alternatively, a single argument x can be provided.
-#' @param y The x and y arguments provide the x and y coordinates of a set of points. Alternatively, a single argument x can be provided.
-#' @param ah.IUCN.obj The ahull.IUCN object.
+#' @param x The ahull.IUCN object.
 #' @param ... Additional plot parameters.
 #' @return None.
 #' @export
-#' @importFrom grDevices xy.coords
 #' @importFrom graphics points polygon segments
 #' @exportS3Method graphics::plot ahull.IUCN
 #' @examples
@@ -15,12 +12,12 @@
 #' x<-cbind(0.5+r*cos(theta),0.5+r*sin(theta))
 #' alpha<-2.5
 #' ah<-ahull.IUCN(x,alpha=alpha)
-#' plot(x,ah.IUCN.obj=ah)
+#' plot(ah)
 
 
-plot.ahull.IUCN<-function(x, y=NULL, ah.IUCN.obj,...){
-  X <- grDevices::xy.coords(x, y)
-  x <- cbind(X$x, X$y)
+plot.ahull.IUCN<-function(x,...){
+  ah.IUCN.obj<-x
+  x <- ah.IUCN.obj$x
   tri.ah<-ah.IUCN.obj$tri.ah.IUCN
   edges.ah<-ah.IUCN.obj$bd.ah.IUCN
   ip.ah<-ah.IUCN.obj$ip.ah.IUCN

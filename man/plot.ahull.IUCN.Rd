@@ -4,14 +4,10 @@
 \alias{plot.ahull.IUCN}
 \title{Very simple plot function}
 \usage{
-\method{plot}{ahull.IUCN}(x, y = NULL, ah.IUCN.obj, ...)
+\method{plot}{ahull.IUCN}(x, ...)
 }
 \arguments{
-\item{x}{The x and y arguments provide the x and y coordinates of a set of points. Alternatively, a single argument x can be provided.}
-
-\item{y}{The x and y arguments provide the x and y coordinates of a set of points. Alternatively, a single argument x can be provided.}
-
-\item{ah.IUCN.obj}{The ahull.IUCN object.}
+\item{x}{The ahull.IUCN object.}
 
 \item{...}{Additional plot parameters.}
 }
@@ -28,5 +24,5 @@ r<-sqrt(runif(n,0.25^2,0.5^2))
 x<-cbind(0.5+r*cos(theta),0.5+r*sin(theta))
 alpha<-2.5
 ah<-ahull.IUCN(x,alpha=alpha)
-plot(x,ah.IUCN.obj=ah)
+plot(ah)
 }

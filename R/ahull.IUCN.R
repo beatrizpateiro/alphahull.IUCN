@@ -72,7 +72,7 @@ ahull.IUCN <- function(x, y = NULL, alpha){
   bd.ah.IUCN=matrix(arcs[barcsIUCN,],ncol=2)
   colnames(bd.ah.IUCN)<-c("from","to")
 
-  ahullIUCN.obj <- list(tri.ah.IUCN=tri.ah.IUCN, bd.ah.IUCN=bd.ah.IUCN, ip.ah.IUCN=isolp, area=areaIUCN, tri = tri.obj, alpha = alpha)
+  ahullIUCN.obj <- list(tri.ah.IUCN=tri.ah.IUCN, bd.ah.IUCN=bd.ah.IUCN, ip.ah.IUCN=isolp, area=areaIUCN, tri = tri.obj, alpha = alpha, x=x)
   class(ahullIUCN.obj) <- "ahull.IUCN"
   invisible(ahullIUCN.obj)
 }
