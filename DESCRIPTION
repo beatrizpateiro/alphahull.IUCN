@@ -1,0 +1,13 @@
+Package: alphahull.IUCN
+Type: Package
+Title: Implementation of the IUCN Alphahull 
+Version: 0.1.0
+Date: 2023-02-28
+Author: Beatriz Pateiro-Lopez
+Maintainer: Beatriz Pateiro-Lopez <beatriz.pateiro@usc.es>
+Imports: interp
+Description: Implementation of the alphahull according to the IUCN Red List Categories and Criteria.
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+License: GPL (>= 2)
