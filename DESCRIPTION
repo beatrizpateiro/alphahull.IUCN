@@ -2,7 +2,7 @@ Package: alphahull.IUCN
 Type: Package
 Title: Implementation of the IUCN Alphahull 
 Version: 0.1.0
-Date: 2023-02-28
+Date: 2023-04-14
 Author: Beatriz Pateiro-Lopez
 Maintainer: Beatriz Pateiro-Lopez <beatriz.pateiro@usc.es>
 Imports: interp

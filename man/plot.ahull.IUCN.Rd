@@ -4,10 +4,12 @@
 \alias{plot.ahull.IUCN}
 \title{Very simple plot function}
 \usage{
-\method{plot}{ahull.IUCN}(x, ...)
+\method{plot}{ahull.IUCN}(x, wplot = c("all", "comp"), ...)
 }
 \arguments{
 \item{x}{The ahull.IUCN object.}
+
+\item{wplot}{"Which in the plot?". I.e. should all points segments and connected components be plat (wlines='all', the default), should only connected components be plotted (wlines='comp')}
 
 \item{...}{Additional plot parameters.}
 }
